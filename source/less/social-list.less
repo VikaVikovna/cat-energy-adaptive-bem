@@ -16,20 +16,23 @@
 }
 
 .social-list__link--vkontakte {
-background: url("../img/icon-vk.svg") no-repeat center;
   width: 28px;
   height: 22px;
   padding-right: 52px;
 }
 
+@media (min-width: @tablet-width) {
+  .social-list__link--vkontakte {
+    padding: 0;
+  }
+}
+
 .social-list__link--youtube {
-  background: url("../img/icon-youtube.svg") no-repeat center;
   width: 28px;
   height: 22px;
 }
 
 .social-list__link--telegram {
-  background: url("../img/icon-telegram.svg") no-repeat center;
   width: 28px;
   height: 22px;
   padding-right: 51px;

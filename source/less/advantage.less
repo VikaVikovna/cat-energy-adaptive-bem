@@ -104,8 +104,10 @@
 
 .advantages__background::after {
   content: "";
-  width: 30px;
-  height: 32px;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+  position: absolute;
 }
 
 @media (min-width: @tablet-width) {
@@ -116,6 +118,30 @@
     width: 80px;
     height: 80px;
   }
+  .advantages__item--leaf .advantages__background::after {
+    content: "";
+    width: 30px;
+    height: 32px;
+    background: url("../img/icons/icon_leaf.svg") no-repeat center;
+  }
+  .advantages__item-powder .advantages__background::after {
+    content: "";
+    width: 30px;
+    height: 32px;
+    background: url("../img/icons/icon__powder.svg") no-repeat center;
+  }
+  .advantages__item-eat .advantages__background::after {
+    content: "";
+    width: 30px;
+    height: 32px;
+    background: url("../img/icons/icon_eat.svg") no-repeat center;
+  }
+  .advantages__item-watch .advantages__background::after {
+    content: "";
+    width: 30px;
+    height: 32px;
+    background: url("../img/icons/icon__watch.svg") no-repeat center;
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -125,40 +151,40 @@
   }
 }
 
-.advantages__item-leaf::after {
-  content: "";
-  position: absolute;
-  width: 30px;
-  height: 32px;
-  transform: translate(50%, 50%);
-  background: url("../img/icon_leaf.svg") no-repeat center;
+@media (min-width: @desktop-width) {
+   .advantages__item--leaf .advantages__background::after {
+    content: "";
+    width: 30px;
+    height: 32px;
+    background: url("../img/icons/icon_leaf.svg") no-repeat center;
+  }
 }
 
-.advantages__item-powder:after {
-  content: "";
-  position: absolute;
-  width: 30px;
-  height: 32px;
-  transform: translate(50%, 50%);
-  background: url("../img/icon__powder.svg") no-repeat center;
+@media (min-width: @desktop-width) {
+  .advantages__item-powder .advantages__background::after {
+    content: "";
+    width: 30px;
+    height: 32px;
+    background: url("../img/icons/icon__powder.svg") no-repeat center;
+  }
 }
 
-.advantages__item-eat::after {
-  content: "";
-  position: absolute;
-  width: 30px;
-  height: 32px;
-  transform: translate(50%, 50%);
-  background: url("../img/icon_eat.svg") no-repeat center;
+@media (min-width: @desktop-width) {
+  .advantages__item-eat .advantages__background::after {
+    content: "";
+    width: 30px;
+    height: 32px;
+    background: url("../img/icons/icon_eat.svg") no-repeat center;
+  }
 }
 
-.advantages__item-watch:after {
-  content: "";
-  position: absolute;
-  width: 30px;
-  height: 32px;
-  transform: translate(50%, 50%);
-  background: url("../img/icon__watch.svg") no-repeat center
+@media (min-width: @desktop-width) {
+  .advantages__item-watch .advantages__background::after {
+    content: "";
+    width: 30px;
+    height: 32px;
+    background: url("../img/icons/icon__watch.svg") no-repeat center;
+  }
 }
 
 @media (min-width: @tablet-width) {

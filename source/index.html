@@ -6,7 +6,7 @@
   <title>HTML Academy: Кэт энерджи</title>
   <link rel="stylesheet" href="css/style.css"/>
   <link rel="icon" href="source/favicon.ico"/>
-  <link rel="icon" href="source/img/favicon.svg" type="image/svg+xml"/>
+  <link rel="icon" href="source/img/icons/favicon.svg" type="image/svg+xml"/>
   <link
     rel="preload"
     href="./fonts/oswald/oswaldregular.woff2"
@@ -54,9 +54,9 @@
 <header class="main-header">
   <a class="main-header__logo">
     <picture>
-      <source media="(min-width:1280px)" srcset="img/logo-desktop.svg">
-      <source media="(min-width:768px)" srcset="img/logo-tablet.svg">
-      <img class="main-header__logo-image" src="img/logo-mobile.svg" width="191" height="38"
+      <source media="(min-width:1280px)" srcset="img/icons/logo-desktop.svg">
+      <source media="(min-width:768px)" srcset="img/icons/logo-tablet.svg">
+      <img class="main-header__logo-image" src="img/icons/logo-mobile.svg" width="191" height="38"
            alt="Логотип Кэт энерджи.">
     </picture>
   </a>
@@ -143,7 +143,7 @@
     <h2 class="advantages__title">Как это работает
     </h2>
     <ul class="advantages__list">
-      <li class="advantages__item advantages__item-leaf">
+      <li class="advantages__item advantages__item--leaf">
         <span class="advantages__background"></span>
         <p class="advantages__description">
           Функциональное питание содержит только полезные питательные вещества.
@@ -175,10 +175,11 @@
     </div>
   </section>
   <section class="example">
+    <div class="example__wrapper">
     <h2 class="example__title">Живой пример
     </h2>
     <div class="example__background">
-    <div class="example__wrapper">
+
     <div class="example__wrapper-left">
     <p class="example__title-description">
       Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без
@@ -210,13 +211,13 @@
         <picture>
           <source media="(min-width:768px)"
                   srcset="img/cat-tablet-before@1x.png 1x, img/cat-tablet-before@2x.png 2x">
-          <img class="slider__image" src="img/cat-mobile-before@1x.png"
+          <img class="slider__image slider__image-position" src="img/cat-mobile-before@1x.png"
                srcset="img/cat-mobile-before@2x.png 2x" width="280" height="256" alt="Кот до нашей диеты.">
         </picture>
         <picture>
           <source media="(min-width:768px)"
                   srcset="img/cat-tablet-after@1x.png 1x, img/cat-tablet-after@2x.png 2x">
-          <img class="slider__image" src="img/cat-mobile-after@1x.png"
+          <img class="slider__image slider__image-second" src="img/cat-mobile-after@1x.png"
                srcset="img/cat-mobile-after@2x.png 2x" width="280" height="256" alt="Кот после диеты.">
         </picture>
       </div>
@@ -255,7 +256,7 @@
 <footer class="main-footer">
   <a class="main-footer__logo-text">
     <img
-      src="./img/logo-text.svg"
+      src="./img/icons/logo-text.svg"
       width="128"
       height="24"
       alt="Логотип-текст Кэт энерджи."
@@ -268,7 +269,7 @@
         class="social-list__link social-list__link--vkontakte"
         href="#"
       >
-        <svg width="24" height="24">
+        <svg width="28" height="22">
           <use xlink:href="./img/sprite.svg#icon-vk"></use>
         </svg>
       </a>

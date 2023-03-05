@@ -45,9 +45,22 @@
   color: #000000;
 }
 
+@media (min-width: @desktop-width) {
+  .main-header__link {
+    color: #ffffff;
+  }
+}
+
 .main-header__link-active {
   padding-bottom: 8px;
   border-bottom: 2px solid @basic-green;
+}
+
+@media (min-width: @desktop-width) {
+  .main-header__link-active {
+    padding-bottom: 8px;
+    border-bottom: 2px solid #fff;
+  }
 }
 
 @media (max-width: @tablet-width - 1px) {
@@ -108,6 +121,7 @@
   .main-header {
     max-width: 1220px;
     margin: 0 auto;
+    z-index: 10;
   }
 }
 
