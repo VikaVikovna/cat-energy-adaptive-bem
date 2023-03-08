@@ -1,12 +1,19 @@
 .programmes {
-  padding: 20px;
+  padding: 0 30px 30px 30px;
   min-height: 266px;
   list-style-type: none;
   margin: 0;
 }
 
+.programmes__list {
+  min-height: 266px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
 @media (min-width: @desktop-width) {
-  .programmes {
+  .programmes__list {
     display: flex;
     gap: 80px;
     max-width: 1220px;
@@ -17,7 +24,7 @@
 }
 
 .programmes__title {
-  font-family: "Oswald";
+  font-family: @font-main;
   display: flex;
   align-items: center;
   position: relative;
@@ -70,16 +77,17 @@
     height: 200px;
     background-color: @basic-green;
     border-radius: 100%;
-    left: 412px;
-    top: 11px;
+    left: 394px;
+    top: 12px;
   }
+
   .programmes__title-slim::after {
     content: "";
     background: url("../img/cat-slim-tablet.png") no-repeat center;
     width: 140px;
     height: 194px;
-    left: 429px;
-    top: -11px;
+    left: 425px;
+    top: 0;
   }
 }
 
@@ -92,6 +100,7 @@
     left: 0;
     top: -17px;
   }
+
   .programmes__title-slim::before {
     content: "";
     width: 100px;
@@ -131,8 +140,8 @@
     height: 200px;
     background-color: @basic-green;
     border-radius: 100%;
-    left: 420px;
-    top: -3px;
+    left: 394px;
+    top: 15px;
   }
 
   .programmes__title-pro::after {
@@ -142,8 +151,8 @@
     width: 268px;
     height: 112px;
     right: 179px;
-    left: 354px;
-    top: 38px;
+    left: 360px;
+    top: 60px;
   }
 }
 
@@ -181,6 +190,7 @@
 
 @media (min-width: @tablet-width) {
   .programmes__description {
+    max-width: 340px;
     font-size: 16px;
     line-height: 24px;
     border: none;
@@ -199,27 +209,25 @@
 .programmes__item {
   background-color: @basic-grey;
   padding: 22px;
-}
 
-@media (min-width: @tablet-width) {
-  .programmes__item {
+  @media (min-width: @tablet-width) and (max-width: @tablet-width-only) {
     min-height: 218px;
-    padding: 77px 53px;
+    padding: 77px 53px 57px 53px;
   }
-}
 
-@media (min-width: @desktop-width) {
-  .programmes__item {
-   padding: 47px 52px;
+  @media (min-width: @desktop-width) {
+    padding: 47px 52px;
   }
 }
 
 .programmes__item-margin {
   margin-bottom: 20px;
-}
 
-@media (min-width: @desktop-width) {
-  .programmes__item-margin {
+  @media (min-width: @tablet-width) and (max-width: @tablet-width-only) {
+    margin-bottom: 30px;
+  }
+
+  @media (min-width: @desktop-width) {
     margin-bottom: 0;
   }
 }

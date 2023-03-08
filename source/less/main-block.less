@@ -20,8 +20,8 @@
   align-items: center;
   justify-content: flex-start;
   flex-direction: column;
-  background: url("../img/main-image-background-mob.jpg") no-repeat center;
-  min-height: 302px;
+  //background: url("../img/main-image-background-mob.jpg") no-repeat center;
+  //min-height: 302px;
   background-size: cover;
 }
 
@@ -88,15 +88,16 @@
 }
 
 .main-container__block-slogan {
-  font-family: "Oswald";
+  padding-bottom: 29px;
+  margin-bottom: 0;
+  z-index: 10;
+  font-family: @font-main;
   font-weight: 400;
   font-size: 14px;
   line-height: 14px;
   text-transform: uppercase;
   color: #ffffff;
   text-align: center;
-  padding-bottom: 29px;
-  z-index: 10;
 }
 
 @media (min-width: @tablet-width) {
@@ -107,7 +108,7 @@
     align-self: start;
     text-align: start;
     margin: 0 118px;
-    padding-bottom: 20px;
+    padding-bottom: 16px;
   }
 }
 
@@ -132,7 +133,6 @@
 }
 
 .main-container__block-image {
-  position: absolute;
   top: -135px;
 }
 
