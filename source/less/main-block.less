@@ -1,21 +1,17 @@
-@media (min-width: @desktop-width) {
-  .main-container__block {
-    background: url("../img/main-image-background-desktop.avif") no-repeat center;
-    max-width: 1220px;
+.main-container {
+  @media (min-width: @desktop-width) {
+    max-width: 1440px;
     margin: 0 auto;
-    background-size: contain;
-    background-position: 100% -100px;
   }
 }
 
-.main-container__block::before {
-  content: "";
-  background-color: rgba(104, 183, 56, 0.85);
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 50%;
-  min-height: 694px;
+@media (min-width: @desktop-width) {
+  .main-container__block {
+    display: flex;
+    flex-direction: column;
+    max-width: @desktop-max-width;
+    margin: 0 auto;
+  }
 }
 
 .main-container__block-description {
@@ -32,6 +28,7 @@
 @media (min-width: @tablet-width) {
   .main-container__block-description {
     background: unset;
+    min-height: initial;
   }
 }
 
@@ -110,6 +107,7 @@
     align-self: start;
     text-align: start;
     margin: 0 118px;
+    padding-bottom: 20px;
   }
 }
 
@@ -123,6 +121,13 @@
 
 @media (min-width: @tablet-width) {
   .main-container__block-action {
+    padding: 0 30px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-container__block-action {
+    z-index: 11;
   }
 }
 
@@ -131,8 +136,9 @@
   top: -135px;
 }
 
-@media (min-width: @tablet-width) {
+@media (min-width: @tablet-width) and (max-width: @desktop-width - 1px) {
   .main-container__block-image {
+    position: initial;
     width: 709px;
     height: 609px;
     top: -34px;
@@ -141,10 +147,10 @@
 
 @media (min-width: @desktop-width) {
   .main-container__block-image {
-    transform: translateX(-50%);
-    left: 50%;
+    position: absolute;
+    right: 330px;
     width: 552px;
     height: 499px;
-    top: 20px;
+    top: -300px;
   }
 }

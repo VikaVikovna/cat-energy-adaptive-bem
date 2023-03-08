@@ -6,10 +6,13 @@
 
 @media (min-width: @tablet-width) and (max-width: @desktop-width - 1px) {
   .main-container__choose-button {
+    position: absolute;
+    top: 40px;
+    left: 20px;
     width: 244px;
     font-size: 20px;
     line-height: 20px;
-    margin-bottom: 595px;
+    //margin-bottom: 595px;
     z-index: 10;
     margin-left: 101px;
     padding: 14px 26px;
@@ -20,6 +23,7 @@
 
 @media (min-width: @desktop-width) {
  .main-container__choose-button {
+   position: initial;
    margin-bottom: 326px;
    margin-left: 99px;
    max-width: 244px;
