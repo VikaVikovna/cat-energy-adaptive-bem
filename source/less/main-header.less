@@ -104,14 +104,15 @@
   }
 }
 
-.main-header__link-active {
-  padding-bottom: 8px;
-  border-bottom: 2px solid @basic-green;
+@media (min-width: @tablet-width) {
+  .main-header__link-active {
+    padding-bottom: 8px;
+    border-bottom: 2px solid @basic-green;
+  }
 }
 
 @media (min-width: @desktop-width) {
   .main-header__link-active {
-    padding-bottom: 8px;
     border-bottom: 2px solid #fff;
   }
 }
