@@ -2,7 +2,15 @@
   min-height: 266px;
   list-style-type: none;
   margin-top: 20px;
-  padding: 0 19px 20px;
+  padding: 0 20px 20px;
+
+  @media (min-width: @tablet-width) and (max-width: @desktop-width) {
+    padding: 0 30px 20px;
+    margin: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+  }
 }
 
 .programmes__list {
@@ -10,10 +18,16 @@
   list-style-type: none;
   margin: 0;
   padding: 0;
-}
 
-@media (min-width: @desktop-width) {
-  .programmes__list {
+  @media (min-width: @tablet-width) and (max-width: @desktop-width) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  @media (min-width: @desktop-width) {
     display: flex;
     gap: 80px;
     max-width: 1220px;
@@ -212,7 +226,7 @@
 
   @media (min-width: @tablet-width) and (max-width: @tablet-width-only) {
     min-height: 218px;
-    padding: 54px 64px 57px;
+    padding: 77px 64px 57px 53px;
   }
 
   @media (min-width: @desktop-width) {

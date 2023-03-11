@@ -1,5 +1,5 @@
 .total {
-  font-family: 'Oswald';
+  font-family: @font-main;
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
@@ -8,22 +8,16 @@
   color: #000000;
   margin: 0;
   padding-top: 35px;
-}
 
-@media (min-width: @tablet-width) {
-  .total {
+  @media (min-width: @tablet-width) {
     font-size: 20px;
-    line-height: 20px;
+    line-height: 30px;
     max-width: 174px;
     text-align: right;
+    padding-top: 0;
   }
-}
 
-@media (min-width: @desktop-width) {
-  .total {
+  @media (min-width: @desktop-width) {
     max-width: unset;
-  }
-  .total-padding {
-
   }
 }
