@@ -9,6 +9,8 @@
 
   @media (min-width: @desktop-width) {
     display: block;
+    background-color: initial;
+    padding: 0;
     //max-width: 1220px;
     //margin: 0 auto;
     //padding: 0;
@@ -16,12 +18,12 @@
 }
 
 .example__title {
-  font-family: 'Oswald';
+  font-family: @font-main;
   font-weight: 400;
   font-size: 36px;
   line-height: 40px;
   color: #000000;
-  margin-top: 19px;
+  margin-top: 37px;
   margin-bottom: 0;
 
   @media (min-width: @tablet-width) and (max-width: @desktop-width) {
@@ -31,27 +33,39 @@
   }
 
   @media (min-width: @desktop-width) {
-    padding-bottom: 76px;
+    margin-top: 26px;
+    padding: 0 110px 85px 110px;
+    font-size: 60px;
+    line-height: 60px;
   }
 }
 
-@media (min-width: @desktop-width) {
-  .example__wrapper-left {
+.example__wrapper-left {
+  @media (min-width: @desktop-width) {
     display: flex;
     flex-direction: column;
     width: 50%;
     align-items: self-start;
+    padding: 0 110px;
   }
 }
 
-@media (min-width: @desktop-width) {
-  .example__wrapper {
-    background-image: linear-gradient(to bottom, transparent 136px, #f2f2f2 136px);
+.example__wrapper {
+  @media (min-width: @desktop-width) {
+    display: flex;
+    //background-image: linear-gradient(to bottom, transparent 136px, #f2f2f2 136px);
+    //background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+    max-width: 1440px;
+    flex-direction: column;
+  }
+}
+
+.example__background {
+  @media (min-width: @desktop-width) {
     display: flex;
     background-color: #f2f2f2;
-    margin: 0;
-    padding: 0 110px;
-    max-width: 1440px;
   }
 }
 
@@ -68,5 +82,10 @@
     font-size: 16px;
     line-height: 24px;
     padding-bottom: 51px;
+  }
+
+  @media (min-width: @desktop-width) {
+    max-width: 436px;
+    padding: 59px 0 77px;
   }
 }

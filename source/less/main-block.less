@@ -5,12 +5,13 @@
   }
 }
 
-@media (min-width: @desktop-width) {
-  .main-container__block {
+.main-container__block {
+  @media (min-width: @desktop-width) {
     display: flex;
     flex-direction: column;
     max-width: @desktop-max-width;
     margin: 0 auto;
+    padding-left: 190px;
   }
 }
 
@@ -23,20 +24,17 @@
   //background: url("../img/main-image-background-mob.jpg") no-repeat center;
   //min-height: 302px;
   background-size: cover;
-}
 
-@media (min-width: @tablet-width) {
-  .main-container__block-description {
+  @media (min-width: @tablet-width) {
     background: unset;
     min-height: initial;
   }
-}
 
-@media (min-width: @desktop-width) {
-  .main-container__block-description {
+  @media (min-width: @desktop-width) {
 
   }
 }
+
 
 .main-container__block-layer {
 
@@ -68,6 +66,19 @@
   text-align: center;
   color: #ffffff;
   z-index: 10;
+
+  @media (min-width: @tablet-width) {
+    color: #000000;
+    font-size: 60px;
+    line-height: 60px;
+    align-self: start;
+    text-align: start;
+    margin: 32px 118px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 29px 0;
+  }
 }
 
 @media (max-width: @tablet-width - 1px) {
@@ -76,16 +87,6 @@
   }
 }
 
-@media (min-width: @tablet-width) {
-  .main-container__block-title {
-    color: #000000;
-    font-size: 60px;
-    line-height: 60px;
-    align-self: start;
-    text-align: start;
-    margin: 32px 118px;
-  }
-}
 
 .main-container__block-slogan {
   padding-bottom: 29px;
@@ -98,16 +99,14 @@
   text-transform: uppercase;
   color: #ffffff;
   text-align: center;
-}
 
-@media (min-width: @tablet-width) {
-  .main-container__block-slogan {
+  @media (min-width: @tablet-width) {
     color: #000000;
     font-size: 20px;
     line-height: 20px;
     align-self: start;
     text-align: start;
-    margin: 0 118px;
+    margin: 0;
     padding-bottom: 16px;
   }
 }
@@ -118,39 +117,32 @@
   flex-direction: column;
   justify-content: flex-end;
   padding: 0 20px;
-}
 
-@media (min-width: @tablet-width) {
-  .main-container__block-action {
+  @media (min-width: @tablet-width) {
     padding: 0 30px;
   }
-}
 
-@media (min-width: @desktop-width) {
-  .main-container__block-action {
+  @media (min-width: @desktop-width) {
     z-index: 11;
+    padding: 35px 0;
   }
 }
 
 .main-container__block-image {
   top: -135px;
-}
 
-@media (min-width: @tablet-width) and (max-width: @desktop-width - 1px) {
-  .main-container__block-image {
+  @media (min-width: @tablet-width) and (max-width: @desktop-width - 1px) {
     position: initial;
     width: 709px;
     height: 609px;
     top: -34px;
   }
-}
 
-@media (min-width: @desktop-width) {
-  .main-container__block-image {
+  @media (min-width: @desktop-width) {
     position: absolute;
     right: 330px;
     width: 552px;
     height: 499px;
-    top: -300px;
+    top: -282px;
   }
 }
