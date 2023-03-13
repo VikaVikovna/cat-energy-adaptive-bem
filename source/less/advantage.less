@@ -12,6 +12,7 @@
   @media (min-width: @desktop-width) {
     padding: 0 110px;
     border-bottom: none;
+    max-width: 1220px;
   }
 }
 
@@ -63,7 +64,7 @@
 .advantages__item {
   display: flex;
   position: relative;
-  font-family: 'Lato';
+  font-family: "Lato", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -103,6 +104,34 @@
   left: 50%;
   top: 50%;
   position: absolute;
+}
+
+.advantages__item--leaf .advantages__background::after {
+  content: "";
+  width: 30px;
+  height: 32px;
+  background: url("../img/icons/icon_leaf.svg") no-repeat center;
+}
+
+.advantages__item-powder .advantages__background::after {
+  content: "";
+  width: 30px;
+  height: 32px;
+  background: url("../img/icons/icon__powder.svg") no-repeat center;
+}
+
+.advantages__item-eat .advantages__background::after {
+  content: "";
+  width: 30px;
+  height: 32px;
+  background: url("../img/icons/icon_eat.svg") no-repeat center;
+}
+
+.advantages__item-watch .advantages__background::after {
+  content: "";
+  width: 30px;
+  height: 32px;
+  background: url("../img/icons/icon__watch.svg") no-repeat center;
 }
 
 @media (min-width: @tablet-width) {
